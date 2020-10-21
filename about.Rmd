@@ -35,4 +35,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 title: "About Me"
 ---
 
-Why I am awesome. 
+- Hi I'm Becky.
+
+blah blah blah 
