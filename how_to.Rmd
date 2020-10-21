@@ -5,6 +5,7 @@ title: "how_to"
 Going to be a mess but general idea of how I started. [Followed this guy's demo](https://livefreeordichotomize.com/2017/08/08/how-to-make-an-rmarkdown-website/) and bought a [Google domain name](https://domains.google).
 
 Needed
+
 - github account
 - netlify sign in with github
 - google domain
