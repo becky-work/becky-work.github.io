@@ -5,6 +5,7 @@ title: "Projects"
 Sometimes I like to do projects and then post them on the internet for the whole world to benefit!
 here's some examples. 
 
+<!---
 ## [Data Visualization in R](http://nickstrayer.me/visualization_in_r/)
 
 - An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
@@ -15,3 +16,4 @@ here's some examples.
 
 - Interactive plots of things
 - I can code!
+!--->

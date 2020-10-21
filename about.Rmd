@@ -35,6 +35,8 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 title: "About Me"
 ---
 
-- Hi I'm Becky.
+Hi I'm Becky.
 
 blah blah blah 
+
+<!--- followed this https://livefreeordichotomize.com/2017/08/08/how-to-make-an-rmarkdown-website/ !--->
