@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "About Me"
       href: about.html
+    - text: "Projects" # adds a new section
+      href: projects.html # where it's going to read from; create rmd, 'rmarkdown::render_site()', commit
 output:
   html_document:
     theme: flatly
