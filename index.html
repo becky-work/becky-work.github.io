@@ -11,7 +11,7 @@
 
 
 
-<title>Personal Website</title>
+<title>ohhh ahhh first tab</title>
 
 <script src="site_libs/header-attrs-2.4/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -303,7 +303,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Personal Website</h1>
+<h1 class="title toc-ignore">ohhh ahhh first tab</h1>
 
 </div>
 
@@ -348,7 +348,13 @@ You can also embed plots, for example:
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 !--->
-<p>Hello, World!</p>
+<p><strong>Look at how cool this plot is!</strong></p>
+<p><span class="math display">\[Y = \alpha \cdot \sin(X), \alpha = 0,0.1,0.2,...,3\]</span></p>
+<div id="remove-before-ticks-to-get-this-to-work." class="section level2">
+<h2>Remove # before ticks to get this to work.</h2>
+<p>#```{r, echo = FALSE, fig.align=‘center’} library(tidyverse) cool_function &lt;- function(x, alpha) return(sin(alpha<em>x)) xs &lt;- seq(0, pi</em>1.5, 0.005) ys &lt;- cool_function(xs, 1) results &lt;- data_frame(xs, ys, alpha = “1”) for(alpha in seq(0,3, 0.1)){ results &lt;- results %&gt;% bind_rows(data_frame( xs, ys = cool_function(xs, alpha), alpha = as.character(alpha) )) }</p>
+<p>ggplot(results, aes(x = xs, y = ys, color = alpha)) + geom_line() + theme_bw() + theme(legend.position=“none”) #```</p>
+</div>
 
 
 
