@@ -4,15 +4,15 @@ navbar:
   title: "Becky Moody"
   left:
     - text: "Home"
-      href: docs/index.html
+      href: index.html
     - text: "Microbiome"
-      href: docs/microbiome.html
+      href: microbiome.html
     - text: "About Me"
-      href: docs/about.html
+      href: about.html
     - text: "How to"
-      href: docs/how_to.html
+      href: how_to.html
     - text: "Projects" # adds a new section
-      href: docs/projects.html # where it's going to read from; create rmd, 'rmarkdown::render_site()', commit
+      href: projects.html # where it's going to read from; create rmd, 'rmarkdown::render_site()', commit
 output:
   html_document:
     theme: flatly
