@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title type="text">Becky Moody</title>
+    <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
+    <updated>2020-10-22T15:43:42-05:00</updated>
+    <id>https://beckymoody.me/</id>
+    <link rel="alternate" type="text/html" href="https://beckymoody.me/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://beckymoody.me/atom.xml" />
+    <author>
+            <name>reuixiy</name>
+            <uri>https://beckymoody.me/</uri>
+            
+                <email>reuixiy@gmail.com</email>
+            </author>
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
+    <generator uri="https://gohugo.io/" version="0.76.5">Hugo</generator>
+</feed>
