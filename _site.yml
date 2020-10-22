@@ -1,10 +1,12 @@
-name: "personal-website"
+name: "Website"
 output_dir: "."
 navbar:
-  title: "Personal Website"
+  title: "Becky Moody"
   left:
     - text: "Home"
       href: index.html
+    - text: "Microbiome"
+      href: microbiome.html
     - text: "About Me"
       href: about.html
     - text: "How to"

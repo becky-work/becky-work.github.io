@@ -1,0 +1,8 @@
+---
+title: "About Me"
+---
+
+Hi I'm Becky.
+
+
+<!--- followed this https://livefreeordichotomize.com/2017/08/08/how-to-make-an-rmarkdown-website/ !--->

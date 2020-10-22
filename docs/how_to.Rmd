@@ -12,7 +12,5 @@ Needed
 - Rstudio (duh)
 
 After every time you want to update the site do 
-````rmarkdown::render_site()````
-
-and commit to git
+````rmarkdown::render_site()```` and commit to git
 
