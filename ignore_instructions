@@ -1,0 +1,87 @@
+install blogdown
+
+file new project, new directory, website using blogdown
+
+name it, check directory, pick hugo theme from https://themes.gohugo.io (going to put the github link in the theme box), check 'keep empty directories', make sure yaml is checked, create
+
+going to create a project specific .Rprofile so you dont have to do this every time
+
+# install.packages("usethis") # uncomment this to install
+usethis::edit_r_profile(scope = "project")
+
+now open .Rprofile and add
+
+if (file.exists("~/.Rprofile")) {
+  base::sys.source("~/.Rprofile", envir = environment())
+}
+
+options(
+  blogdown.author = "Becky Moody",
+  blogdown.ext = ".Rmd",
+  blogdown.subdir = "post", # folder inside /content/ where your .Rmd info is going
+  blogdown.yaml.empty = TRUE,
+  blogdown.new_bundle = TRUE,
+  blogdown.title_case = TRUE
+)
+
+
+MAKE SURE THERE IS AN EMPTY LINE AT THE END
+save and restart R
+
+Needed for new content will make sense in a second
+in the root directory add an 'archetypes' folder if there's not one
+When you create an .Rmd file, there's always a YAML header that gives you the file options like out to render it, title, default stuff
+The whole point of this you want 
+output:
+  html_document:
+    keep_md: yes
+in order for your website to render html from .md using hugo instead of blogdown
+example:
+---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+author: Becky Moody
+date: {{ .Date }}
+
+draft: true
+output:
+  html_document:
+    keep_md: yes
+always_allow_html: true
+
+tags: []
+image: index_files/
+---
+save as [somename].md in the archetypes folder
+
+
+
+Now to add new content to your blog
+In rstudio, go to addins, New Post
+name, whatever options, if you have multiple folders for your content then pick the right one
+Now to archetypes, these are the default YAML headers that go into .Rmd files that you made above, pick whichever one, but you don't have to. just make sure that keep_me: yes part is in the header
+Don't use the .Rmarkdown file type. I'm using .Rmd as usual for everything
+
+
+Let's say you're working on a post but it's going to take a couple days, when you create it it's going to have that first date which might not be what you want. If you want it to use the current date open the index.Rmd of the post
+go to addins, update metadata and update as needed if you want the current date check the rename file if date is changed.
+You will get warnings when you go to save this because your current file doesn't exist. it got renamed and got a new folder
+
+
+when you want to wrap up the site and render everything don't use blogdown::serve_site()
+the major point of these changes is you want one folder to contain everything about that post, when you knit an .Rmd it creates a folder with the extra files that are created. blogdown moves this folder which isn't what we want so
+go to terminal tab (in the console) and use hugo serve
+go to the link and when you knit a .Rmd you're working on it should be updated in that link
+
+
+we want hugo to create those .htmls but when we knit the .Rmd they're already create so we want to tell hugo to ignore them
+go to config.toml in the root
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html", "about\\.html", "static/blog/\\*_files/", "README"] 
+
+for hugo to render things properly add
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+to the config.toml too
+
+LINKS
+https://alison.rbind.io/post/2019-02-21-hugo-page-bundles/
+https://alison.rbind.io/post/2019-02-19-hugo-archetypes/
