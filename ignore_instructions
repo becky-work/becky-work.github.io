@@ -76,11 +76,11 @@ go to the link and when you knit a .Rmd you're working on it should be updated i
 we want hugo to create those .htmls but when we knit the .Rmd they're already create so we want to tell hugo to ignore them
 go to config.toml in the root
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html", "about\\.html", "static/blog/\\*_files/", "README"] 
+If you're adding anything weird to just save here then add it to the ignore like you would to '.gitignore'
 
-for hugo to render things properly add
-[markup]
-  defaultMarkdownHandler = "blackfriday"
-to the config.toml too
+If you want to change things about the theme DO NOT mess with anything in /themes/, just create your own toml or whatever in your data folder or wherever it needs to go
+
+
 
 LINKS
 https://alison.rbind.io/post/2019-02-21-hugo-page-bundles/

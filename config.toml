@@ -5,12 +5,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html",
 "about\\.html", "static/blog/\\*_files/", "README", "ignore_instructions.txt"] 
 
 
-baseURL = "https://beckymoody.me/"
+baseURL = "http://beckymoody.me/"
 title = "Becky Moody"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+#copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 
 # Name of theme
 theme = "hugo-theme-meme"
@@ -52,6 +52,7 @@ uglyURLs = false
 
 # URL structure
 [permalinks]
+    #posts = "/post/:slug/"
     categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
@@ -88,17 +89,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "reuixiy"
+    name = "Becky Moody"
     # Email
-    email = "reuixiy@gmail.com"
+    email = "becky.moody@outlook.com"
     # Motto or introduction
-    motto = "Viva La Vida"
+    # motto = "Viva La Vida"
     # Avatar
-    avatar = "/icons/apple-touch-icon.png"
+    # avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
-    website = "https://io-oi.me/"
+    website = "https://beckymoody.me/"
     # Twitter
-    twitter = "reuixiy"
+    #twitter = "reuixiy"
 
 # Related content
 [related]
@@ -192,7 +193,7 @@ uglyURLs = false
     #     pre = "internal"
     #     post = "home"
     [[menu.main]]
-        url = "/posts/"
+        url = "/post/"
         name = "Posts"
         weight = 2
         pre = "internal"
@@ -332,15 +333,15 @@ uglyURLs = false
     siteLogo = "/icons/apple-touch-icon.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
+    siteDescription = ""
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2020-10-20T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "reuixiy"
+    # siteTwitter = "reuixiy"
     # Note: used for Twitter Cards
 
 
@@ -1198,9 +1199,9 @@ uglyURLs = false
 
     displayFooterInHome = true
 
-    displayCopyrightSymbol = true
+    displayCopyrightSymbol = false
 
-    displaySiteCreatedYear = true
+    displaySiteCreatedYear = true # true for year to show up
 
     # Leave it empty("") if you don’t want
     # the icon
@@ -1212,7 +1213,7 @@ uglyURLs = false
     # Display links to Hugo and MemE?
     displayPoweredBy = true
 
-    displaySiteCopyright = true
+    displaySiteCopyright = false
 
     # Custom Footer (Markdown supported)
     customFooter = ""
