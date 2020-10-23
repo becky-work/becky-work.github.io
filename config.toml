@@ -5,7 +5,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "index\\.html",
 "about\\.html", "static/blog/\\*_files/", "README", "ignore_instructions.txt"] 
 
 
-baseURL = "http://beckymoody.me/"
+baseURL = "https://beckymoody.me/"
 title = "Becky Moody"
 languageCode = "en"
 hasCJKLanguage = false
